@@ -1,0 +1,30 @@
+{
+
+    "model":
+    {
+        "embed_size":16, 
+        "num_heads":4, 
+        "num_layers":4, 
+        "block_size":256
+    },
+    "train":
+    {
+        "epochs":2,
+        "batch_size":64,
+        "corpus_path":"data/corpus.txt",
+        "device":"cuda",
+        "learning_rate":0.001,
+        "save_path":"model/model_weights.pth"
+    },
+    "eval":
+    {
+        "model_path":"model/model_weights.pth",
+        "corpus_path":"data/test.txt",
+        "device":"cuda",
+        "max_new_tokens":30
+
+    }
+
+    
+
+}
